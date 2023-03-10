@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
+    <head th:replace="~{layout/plantilla :: head}">
         <title>TechShop</title>
         <meta charset="UTF-8"/>
-
     </head>
     <body>
-
+        <header th:replace="~{layout/plantilla :: header}"/>
+        
         <h2>Datos de Cliente</h2>
         <br>
         <hr>
@@ -25,7 +25,7 @@
                    name="nombre" 
                    value="" 
                    th:field="*{nombre}"
-                   size="30" />
+                   size="20" />
             <br>
 
             <label>Apellidos</label>    
@@ -33,7 +33,7 @@
                    name="apellidos" 
                    value="" 
                    th:field="*{apellidos}"
-                   size="40" />
+                   size="30" />
             <br>
 
             <label>Correo</label>    
@@ -41,7 +41,7 @@
                    name="correo" 
                    value="" 
                    th:field="*{correo}"
-                   size="15" />
+                   size="25" />
             <br>
 
             <label>Teléfono</label>    
@@ -49,10 +49,10 @@
                    name="telefono" 
                    value="" 
                    th:field="*{telefono}"
-                   size="10" />
+                   size="15" />
             <br>
             <input type="submit" value="Guardar" />
         </form>
-
+        <footer th:replace="~{layout/plantilla :: footer}"/>
     </body>
 </html>
