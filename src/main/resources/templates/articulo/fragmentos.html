@@ -116,7 +116,7 @@
                                             <td>[[${articulo.detalle}]]</td>
                                              <td>[[${articulo.precio}]]</td>
                                              <td>[[${articulo.existencias}]]</td>
-                                             <td> <img th:src="@{${articulo.imagen}}"></img></td>
+                                             <td> <img th:src="@{${articulo.imagen}}"width="150" height="150"/></td>
                                              <td><input type="checkbox" th:checked="${articulo.activo}" disabled="true"></td>
                                             <td><a th:href="@{/articulo/eliminar/}+${articulo.idArticulo}"
                                                    class="btn btn-danger">
