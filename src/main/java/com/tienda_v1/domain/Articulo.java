@@ -16,6 +16,7 @@ public class Articulo implements Serializable {
     @Column(name="id_articulo")
     private Long idArticulo;
     
+    
     private String descripcion;
     private String detalle;
     private double precio;
